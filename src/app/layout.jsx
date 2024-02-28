@@ -1,5 +1,6 @@
 import "./globals.sass"
 import { antonio, spartan } from "./utils/fonts"
+import Navbar from "./components/Navbar"
 
 export default function RootLayout({ children }) {
   return (
@@ -7,7 +8,10 @@ export default function RootLayout({ children }) {
       lang="en" 
       className={`${antonio.variable} ${spartan.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

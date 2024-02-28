@@ -1,0 +1,44 @@
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 20px 30px
+  border-bottom: 1px solid #979797
+
+.logo
+  font-family: var(--antonio)
+  font-weight: 500
+  font-size: 28px
+  letter-spacing: -1px
+  text-transform: uppercase
+
+.menu
+  display: flex
+  gap: 30px
+  text-transform: uppercase
+
+.menu_item
+  font-family: var(--spartan)
+  font-weight: 700
+  font-size: 11px
+  line-height: 25px
+  letter-spacing: +1px
+
+.hamburger_icon
+  display: none
+
+@media screen and ( max-width: 800px )
+  .navbar
+    flex-direction: column
+    gap: 40px
+  
+@media screen and ( max-width: 600px )
+  .navbar
+    flex-direction: row
+  
+  .menu
+    display: none
+
+  .hamburger_icon
+    display: block
+    
