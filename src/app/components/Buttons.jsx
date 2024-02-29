@@ -19,7 +19,7 @@ export default function Buttons() {
         text="Internal Structure" 
       />
       <Button 
-        url={`/${planet.name.toLowerCase()}/surface`} 
+        url={`/${planet.name.toLowerCase()}/geology`} 
         text="Surface Geology" 
       />
     </div>

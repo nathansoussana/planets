@@ -1,3 +1,5 @@
+@use "../utils/variables"
+  
 .page
   display: flex
   flex-direction: column
@@ -24,6 +26,12 @@
 
 .source
   margin-bottom: 40px
+  color: variables.$silver
+
+.wikipedia
+  text-transform: capitalize
+  color: variables.$silver
+  text-decoration: underline
 
 @media screen and ( max-width: 800px )
   .main_content

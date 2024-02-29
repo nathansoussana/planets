@@ -8,7 +8,7 @@ export default function Navbar() {
   const planetNames = planets.map(planet =>
       <Link 
         key={planet.name.toLowerCase()}
-        href={`/${planet.name.toLowerCase()}`}
+        href={`/${planet.name.toLowerCase()}/overview`}
         className={styles.menu_item}  
       >
         {planet.name}
@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>The Planets</div>
+      <Link href="/" className={styles.logo}>The Planets</Link>
       <div className={styles.menu}>{planetNames}</div>
       <Image 
         src="icon-hamburger.svg" 
