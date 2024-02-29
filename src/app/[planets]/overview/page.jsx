@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <Image 
         src={`/${planet.images.planet}`}
-        width={100} height={100} alt={planet.name}
+        width={290} height={290} alt={planet.name}
       />
     </>
   )

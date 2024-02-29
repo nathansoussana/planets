@@ -1,8 +1,10 @@
+import styles from "./fact.module.sass"
+
 export default function Fact({ title, text }) {
   return (
-    <>
-      <h3>{title}</h3>
-      <p>{text}</p>
-    </>
+    <div className={styles.fact}>
+      <h4 className={styles.title}>{title}</h4>
+      <h2 className={styles.data}>{text}</h2>
+    </div>
   )
 }

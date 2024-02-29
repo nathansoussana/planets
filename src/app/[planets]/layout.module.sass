@@ -1,0 +1,35 @@
+.page
+  display: flex
+  flex-direction: column
+  gap: 90px
+  
+.main_content
+  display: flex
+  gap: 90px
+
+.main_content_image
+  flex-grow: 1
+  display: flex
+  justify-content: center
+  align-items: center
+
+.main_content_copy
+  max-width: 350px
+
+.title
+  margin-bottom: 25px
+
+.text
+  margin-bottom: 25px
+
+.source
+  margin-bottom: 40px
+
+@media screen and ( max-width: 800px )
+  .main_content
+    flex-direction: column
+
+  .main_content_copy
+    display: flex
+    max-width: 100%
+    gap: 70px
