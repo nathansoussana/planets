@@ -27,7 +27,7 @@ export default function Layout({ children }) {
       <div className={styles.main_content}>
         <div className={styles.main_content_image}>{children}</div>
         <div className={styles.main_content_copy}>
-          <div>
+          <div className={styles.main_content_copy_text}>
             <h1 className={styles.title}>{planet.name}</h1>
             <p className={styles.text}>{planet.overview.content}</p>
             <p className={styles.source}>Source:&nbsp;
@@ -40,7 +40,9 @@ export default function Layout({ children }) {
               }
             </p>
           </div>
-          <Buttons />
+          <div className={styles.main_content_copy_buttons}>
+            <Buttons />
+          </div>
         </div>
       </div>
       <Facts />

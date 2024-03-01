@@ -19,3 +19,11 @@
   align-items: center
 
 .planet_name
+
+@media screen and ( max-width: 800px )
+  .planets
+    grid-template-columns: repeat(3, 1fr)
+
+@media screen and ( max-width: 600px )
+  .planets
+    grid-template-columns: repeat(2, 1fr)
