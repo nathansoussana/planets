@@ -11,14 +11,17 @@ export default function Buttons() {
   return (
     <div className={styles.buttons}>
       <Button 
+        number="01"
         url={`/${planet.name.toLowerCase()}/overview`} 
         text="Overview" 
       />
       <Button 
+        number="02"
         url={`/${planet.name.toLowerCase()}/structure`} 
         text="Internal Structure" 
       />
       <Button 
+        number="03"
         url={`/${planet.name.toLowerCase()}/geology`} 
         text="Surface Geology" 
       />
