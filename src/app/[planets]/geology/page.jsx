@@ -10,16 +10,18 @@ export default function Page() {
 
   return (
     <div className={styles.images}>
-      <Image 
-        className={styles.image_planet}
-        src={`/${planet.images.planet}`}
-        width={290} height={290} alt={planet.name}
-      />
-      <Image 
-        className={styles.image_zoom}
-        src={`/${planet.images.geology}`}
-        width={163} height={199} alt={planet.name}
-      />
+      <div className={styles.images_wrapper}>
+        <Image 
+          className={styles.image_planet}
+          src={`/${planet.images.planet}`}
+          width={290} height={290} alt={planet.name}
+        />
+        <Image 
+          className={styles.image_zoom}
+          src={`/${planet.images.geology}`}
+          width={163} height={199} alt={planet.name}
+        />
+      </div>
     </div>
   )
 }
