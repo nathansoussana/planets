@@ -14,16 +14,31 @@ export default function Buttons() {
         number="01"
         url={`/${planet.name.toLowerCase()}/overview`} 
         text="Overview" 
+        className={`
+          ${styles.button}
+          ${styles[planet.name.toLowerCase()]}
+          ${pathname.includes("overview") ? styles.active : ""}
+        `}
       />
       <Button 
         number="02"
         url={`/${planet.name.toLowerCase()}/structure`} 
         text="Internal Structure" 
+        className={`
+          ${styles.button}
+          ${styles[planet.name.toLowerCase()]}
+          ${pathname.includes("structure") ? styles.active : ""}
+        `}
       />
       <Button 
         number="03"
         url={`/${planet.name.toLowerCase()}/geology`} 
         text="Surface Geology" 
+        className={`
+          ${styles.button}
+          ${styles[planet.name.toLowerCase()]}
+          ${pathname.includes("geology") ? styles.active : ""}
+        `}
       />
     </div>
   )
