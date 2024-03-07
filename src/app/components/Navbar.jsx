@@ -3,13 +3,20 @@ import styles from './navbar.module.sass'
 import { planets } from '../../../data'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
+  const pathname = usePathname()
+
   const planetNames = planets.map(planet =>
       <Link 
         key={planet.name.toLowerCase()}
         href={`/${planet.name.toLowerCase()}/overview`}
-        className={`${styles.menu_item} ${styles[planet.name.toLowerCase()]}`}
+        className={`
+          ${styles.menu_item} 
+          ${styles[planet.name.toLowerCase()]} 
+          ${pathname.includes(planet.name.toLowerCase()) ? styles.active : ""}
+        `}
       >
         {planet.name}
       </Link>
