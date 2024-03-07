@@ -9,7 +9,7 @@ export default function Navbar() {
       <Link 
         key={planet.name.toLowerCase()}
         href={`/${planet.name.toLowerCase()}/overview`}
-        className={styles.menu_item}  
+        className={`${styles.menu_item} ${styles[planet.name.toLowerCase()]}`}
       >
         {planet.name}
       </Link>
