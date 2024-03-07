@@ -29,16 +29,18 @@ export default function Layout({ children }) {
         <div className={styles.main_content_copy}>
           <div className={styles.main_content_copy_text}>
             <h1 className={styles.title}>{planet.name}</h1>
-            <p className={styles.text}>{planet.overview.content}</p>
-            <p className={styles.source}>Source:&nbsp;
-              {section &&
-                <a href={planet[section].source}>
-                  <span className={styles.wikipedia}>Wikipedia</span>
-                  <span>&nbsp;</span>
-                  <Image src="/icon-source.svg" width={8} height={8} alt="Source"/>
-                </a>
-              }
-            </p>
+            {section &&
+              <>
+                <p className={styles.text}>{planet[section].content}</p>
+                <p className={styles.source}>Source:&nbsp;
+                  <a href={planet[section].source}>
+                    <span className={styles.wikipedia}>Wikipedia</span>
+                    <span>&nbsp;</span>
+                    <Image src="/icon-source.svg" width={8} height={8} alt="Source"/>
+                  </a>
+                </p>
+              </>
+            }
           </div>
           <div className={styles.main_content_copy_buttons}>
             <Buttons />
