@@ -1,0 +1,89 @@
+@use '../utils/variables'
+
+.menu
+  display: none
+  
+@media screen and ( max-width: 650px )
+  .menu
+    display: block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 25px
+    border-bottom: 1px solid variables.$granit
+  
+  .menu_item
+    font-weight: 700
+    letter-spacing: 2px
+    opacity: 75%
+    text-transform: uppercase
+    padding: 25px 0
+    border-bottom: 4px solid transparent
+    transition: 0.1s ease
+
+    &:hover
+      opacity: 100%
+
+.mercury
+  &:hover
+    border-bottom-color: variables.$mercury
+
+.mercury.active
+  border-bottom-color: variables.$mercury
+  opacity: 100%
+
+.venus
+  &:hover
+    border-bottom-color: variables.$venus
+
+.venus.active
+  border-bottom-color: variables.$venus
+  opacity: 100%
+
+.earth
+  &:hover
+    border-bottom-color: variables.$earth
+
+.earth.active
+  border-bottom-color: variables.$earth
+  opacity: 100%
+
+.mars
+  &:hover
+    border-bottom-color: variables.$mars
+
+.mars.active
+  border-bottom-color: variables.$mars
+  opacity: 100%
+
+.jupiter
+  &:hover
+    border-bottom-color: variables.$jupiter
+
+.jupiter.active
+  border-bottom-color: variables.$jupiter
+  opacity: 100%
+
+.saturn
+  &:hover
+    border-bottom-color: variables.$saturn
+
+.saturn.active
+  border-bottom-color: variables.$saturn
+  opacity: 100%
+
+.uranus
+  &:hover
+    border-bottom-color: variables.$uranus
+
+.uranus.active
+  border-bottom-color: variables.$uranus
+  opacity: 100%
+
+.neptune
+  &:hover
+    border-bottom-color: variables.$neptune
+
+.neptune.active
+  border-bottom-color: variables.$neptune
+  opacity: 100%
