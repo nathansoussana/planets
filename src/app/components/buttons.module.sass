@@ -11,59 +11,36 @@
   padding: 15px 30px
   display: flex
   gap: 30px
+  transition: 0.1s ease
 
-.mercury
   &:hover
-    background-color: variables.$mercury
+    background-color: variables.$granit
 
 .mercury.active
   background-color: variables.$mercury
 
-.venus
-  &:hover
-    background-color: variables.$venus
-
 .venus.active
   background-color: variables.$venus
-
-.earth
-  &:hover
-    background-color: variables.$earth
 
 .earth.active
   background-color: variables.$earth
 
-.mars
-  &:hover
-    background-color: variables.$mars
-
 .mars.active
   background-color: variables.$mars
-
-.jupiter
-  &:hover
-    background-color: variables.$jupiter
 
 .jupiter.active
   background-color: variables.$jupiter
 
-.saturn
-  &:hover
-    background-color: variables.$saturn
-
 .saturn.active
   background-color: variables.$saturn
 
-.uranus
-  &:hover
-    background-color: variables.$uranus
-
 .uranus.active
   background-color: variables.$uranus
-    
-.neptune
-  &:hover
-    background-color: variables.$neptune
 
 .neptune.active
   background-color: variables.$neptune
+
+@media screen and ( max-width: 600px )
+  .buttons
+    display: none
+  
